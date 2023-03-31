@@ -4,7 +4,7 @@ This document provides instructions for running the ABP.IO project after downloa
 
 Prerequisites
   1.Visual Studio 2019 or later
-  2..NET 5.0 or later
+  2.NET 5.0 or later
   3.Microsoft SQL Server
   
 Steps to Run the Project
