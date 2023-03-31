@@ -3,16 +3,16 @@ How to Run the ABP.IO Project
 This document provides instructions for running the ABP.IO project after downloading the code from GitHub.
 
 Prerequisites
-  1.Visual Studio 2019 or later
-  2.NET 5.0 or later
-  3.Microsoft SQL Server
+    1.Visual Studio 2019 or later
+    2.NET 5.0 or later
+    3.Microsoft SQL Server
   
 Steps to Run the Project
-  1.Open the solution file (.sln) in Visual Studio.
-  2.Set the DbMigrator project as the startup project.
-  3.Run the DbMigrator project to migrate the database.
-  4.Set the .Web project as the startup project.
-  5.Run the .Web project to start the application.
+    1.Open the solution file (.sln) in Visual Studio.
+    2.Set the DbMigrator project as the startup project.
+    3.Run the DbMigrator project to migrate the database.
+    4.Set the .Web project as the startup project.
+    5.Run the .Web project to start the application.
   
 If you encounter any exceptions during the running of the application, it may be due to missing libraries. To install these libraries, follow the steps below:
 
