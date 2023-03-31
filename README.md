@@ -1,4 +1,5 @@
-How to Run the ABP.IO Project
+<sup>How to Run the ABP.IO Project</sup>
+
 This document provides instructions for running the ABP.IO project after downloading the code from GitHub.
 
 Prerequisites
