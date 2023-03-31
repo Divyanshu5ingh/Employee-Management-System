@@ -72,13 +72,16 @@ public class EmployeeAppService :
                     select new { employee, department };
 
         query = query
-            .WhereIf(!string.IsNullOrWhiteSpace(input.Filter), x => x.employee.Name.ToLower().Contains(input.Filter.ToLower()))
+            .WhereIf(!string.IsNullOrWhiteSpace(input.Filter), 
+            x => x.employee.Name.ToLower().Contains(input.Filter.ToLower()) ||
+            x.department.Name.ToLower().Contains(input.Filter.ToLower()))
             .OrderBy(NormalizeSorting(input.Sorting))
             .Skip(input.SkipCount)
             .Take(input.MaxResultCount);
 
+        
         var queryResult = await AsyncExecuter.ToListAsync(query);
-
+       
         var employeeDtos = queryResult.Select(x =>
         {
             var employeeDto = ObjectMapper.Map<Employee, EmployeeDto>(x.employee);
